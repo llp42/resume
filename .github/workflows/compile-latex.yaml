@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Install fonts
       run: |
@@ -26,7 +26,7 @@ jobs:
         lualatex resume.tex
 
     - name: Upload PDF as artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: resume--leonardo-lopes-pereira
         path: resume.pdf
